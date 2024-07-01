@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="hero container flex-col">
+            <img data-testid="slackProfilePicture" src="./images/slack-profile.webp" alt="My Slack Profile Picture">
+            <h2 data-testid="slackDisplayName" class="">Abundance Ken-Dickson</h2>
+            <h3 data-testid="slackEmail">abundiko111@gmail.com</h2>
+                <h4 class="">Frontend Developer</h2>
+        </section>
+        <section class="container content">
+            <div class="lap lap-1"></div>
+            <div class="lap lap-2"></div>
+            <div class="flex-col goals">
+                <h2>My Tech Goals for the next 2 years</h2>
+                <ul>
+                    <li>Vue.js Deep Dive: Master core concepts (components, directives, data binding, lifecycle methods,
+                        virtual DOM). Build an SPA to solidify understanding.</li>
+                    <li>Nuxt.js Extension: Learn server-side rendering with Vue.js using Nuxt.js. Explore routing, data
+                        fetching, and server-side logic integration. Create a server-rendered Vue application.</li>
+                    <li>Three.js Foundation: Gain a working knowledge of 3D scene creation in Three.js. Learn lights,
+                        cameras, materials, textures, and basic object manipulation. Build a simple interactive 3D
+                        scene.</li>
+                    <li>Open Source Contribution: Find a React/Next.js project on GitHub that interests you. Contribute
+                        bug fixes or small improvements to the codebase. Practice collaboration and build your online
+                        presence.</li>
+                    <li>Front-end Workflow Improvement: Implement a workflow using Git version control, task management
+                        tools, testing frameworks, and a linter/formatter (ESLint/Prettier). Improve efficiency, code
+                        quality, and collaboration.</li>
+                </ul>
+            </div>
+        </section>
+        <footer class="container">
+            <h4>
+                <span>Today is: </span>
+                <span id="date" data-testid="currentDay"></span>
+                <br><br>
+                <span>Time: </span>
+                <span id="time" data-testid="currentTimeUTC"></span>
+            </h4>
+        </footer>
+        <div class="last container">
+            <a href="hng.tech/learn">HNG Internship</a>
+            <a href="keyword.dog">Keyword Dog</a>
+            <a href="scrapeanyweb.site">Scrape any web</a>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
